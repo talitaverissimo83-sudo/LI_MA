@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talita">
+    <title>Minha Primeira Página HTML</title>
+</head>
+<body>
+
+    <h1>Bem vindosss à minha página</h1>
+
+    <h2>aqui fica o conteúdo</h2>
+
+    <p>
+        Esta é uma página criada para praticar html
+        <strong>Este trecho está em negrito pois é bemmm importante</strong> e
+        <em>este trecho está em itálico</em>.
+    </p>
+
+    <footer>
+        <p>&copy; 2025 Talita.</p>
+    </footer>
+
+</body>
+</html>
