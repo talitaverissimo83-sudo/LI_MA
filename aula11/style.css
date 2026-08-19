@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(197, 233, 224);
+}
+h1 {
+    color: rgb(204, 181, 151);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 120%;
+}
+span {
+    font-size: 2em;
+    color: brown;
+    
+}
+
+h2 {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 900;
+    font-style: normal;
+}
