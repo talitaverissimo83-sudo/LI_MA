@@ -1,0 +1,22 @@
+body {
+    background-color: blanchedalmond;
+}
+
+/* SELETORES */
+
+/* Própria html */
+
+/* ID */
+/* Atributo html que adiciona um identificador ÚNICO na tag. utilizado para selecionar elementos */
+
+#paragrafo1 {
+    color: rgb(69, 119, 122);
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing:auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.titulo {
+    color: rgb(114, 167, 173);
+}
