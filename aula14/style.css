@@ -1,0 +1,27 @@
+body {
+    background-color: aliceblue;
+}
+
+.block {
+    display: block;
+    background-color: rgb(255, 189, 241);
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid pink;
+}
+
+.inline {
+    display: inline;
+    background-color:rgb(145, 247, 213);
+    padding: 10px;
+    border: 2px solid rgba(165, 196, 159, 0.712);
+}
+
+.inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    padding: 10xp;
+    margin: 5xp;
+    border: 2px solid rgb(255, 205, 247);
+}

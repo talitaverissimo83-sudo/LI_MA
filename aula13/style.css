@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(220, 157, 223);
+    border: 5px solid rgb(158, 87, 149);
+    padding: 20px;
+}
+
+.box2 {
+    /* padding: 20px; aplica em todos os lados */
+    width: 200px;
+    height: 100px;
+    background-color:aliceblue
+    border dashed rgb(158, 87, 149)
+  
+ 
+}
