@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Back-End</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Desenvolvimento Back-End em Aplicações Web</h1>
+
+        <p>
+            Entendendo o que acontece por trás de um site:
+            servidores, APIs, bancos de dados e tecnologias Back-End.
+        </p>
+
+        <nav>
+            <a href="#front-back">Front-End x Back-End</a>
+            <a href="#funcionamento">Funcionamento</a>
+            <a href="#apis">APIs</a>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#aplicacao">Aplicação real</a>
+            <a href="#referencias">Referências</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="destaque">
+            <h2>Pergunta principal</h2>
+
+            <p>
+                <strong>
+                    “Quando o usuário clica em um botão no site,
+                    o que está acontecendo no Back-End?”
+                </strong>
+            </p>
+
+            <p>
+                Quando o usuário clica em um botão, o navegador pode
+                enviar uma requisição para o servidor. O Back-End recebe
+                essa requisição, verifica os dados, executa as regras
+                necessárias e pode consultar ou alterar um banco de dados.
+                Depois disso, ele envia uma resposta para o Front-End.
+            </p>
+        </section>
+
+
+        <section id="front-back">
+            <h2>1. Front-End e Back-End</h2>
+
+            <article>
+                <h3>O que é Front-End?</h3>
+
+                <p>
+                    Front-End é a parte de uma aplicação que o usuário
+                    consegue visualizar e utilizar. Ele envolve a aparência
+                    da página, os botões, menus, textos, imagens e formulários.
+                </p>
+
+                <p>
+                    As principais tecnologias utilizadas no Front-End são
+                    HTML, CSS e JavaScript.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>O que é Back-End?</h3>
+
+                <p>
+                    Back-End é a parte da aplicação responsável pelo
+                    funcionamento interno do sistema. Ele recebe informações,
+                    processa dados, aplica regras de negócio, trabalha com
+                    bancos de dados e pode fornecer APIs.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Diferenças entre Front-End e Back-End</h3>
+
+                <table>
+                    <tr>
+                        <th>Front-End</th>
+                        <th>Back-End</th>
+                    </tr>
+
+                    <tr>
+                        <td>É a parte visual do site.</td>
+                        <td>É a parte responsável pelo processamento.</td>
+                    </tr>
+
+                    <tr>
+                        <td>É executado principalmente no navegador.</td>
+                        <td>É executado principalmente no servidor.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Utiliza HTML, CSS e JavaScript.</td>
+                        <td>Pode utilizar Python, Java, PHP, JavaScript, C# etc.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Interage diretamente com o usuário.</td>
+                        <td>Trabalha com dados, regras e bancos de dados.</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Como eles se comunicam?</h3>
+
+                <p>
+                    Front-End e Back-End normalmente se comunicam através
+                    da internet utilizando protocolos como HTTP e HTTPS.
+                    O Front-End envia uma requisição para o servidor e recebe
+                    uma resposta.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Onde o Back-End é executado?</h3>
+
+                <p>
+                    O Back-End é executado em um servidor. Esse servidor
+                    pode ser um computador físico, uma máquina virtual ou
+                    um serviço de computação em nuvem.
+                </p>
+            </article>
+        </section>
+
+
+        <section id="funcionamento">
+            <h2>2. Funcionamento do Back-End</h2>
+
+            <article>
+                <h3>Cliente e servidor</h3>
+
+                <p>
+                    O cliente normalmente é o navegador que o usuário está
+                    utilizando. O servidor é responsável por receber as
+                    requisições e fornecer os dados ou serviços solicitados.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Requisição e resposta</h3>
+
+                <p>
+                    A requisição é uma mensagem enviada pelo cliente para
+                    o servidor. Depois de processar essa solicitação,
+                    o servidor envia uma resposta para o cliente.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>HTTP e HTTPS</h3>
+
+                <p>
+                    HTTP é um protocolo utilizado para comunicação entre
+                    navegadores e servidores na Web. HTTPS utiliza uma
+                    conexão protegida por TLS, aumentando a segurança
+                    durante a transmissão dos dados.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Servidor Web</h3>
+
+                <p>
+                    O servidor Web recebe requisições HTTP e envia os
+                    recursos solicitados. Em aplicações dinâmicas, ele
+                    também pode encaminhar as requisições para o código
+                    do Back-End.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Regras de negócio</h3>
+
+                <p>
+                    Regras de negócio são as regras que determinam como
+                    uma aplicação deve funcionar.
+                </p>
+
+                <p>
+                    Por exemplo, em uma loja virtual, uma compra só pode
+                    ser realizada se o produto estiver disponível no estoque.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Validação de dados</h3>
+
+                <p>
+                    O Back-End também verifica se os dados recebidos são
+                    válidos. Por exemplo, pode verificar se um e-mail possui
+                    um formato correto ou se determinado usuário possui
+                    permissão para realizar uma ação.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>O que acontece quando o usuário realiza uma ação?</h3>
+
+                <ol>
+                    <li>O usuário clica em um botão.</li>
+                    <li>O Front-End prepara os dados.</li>
+                    <li>O navegador envia uma requisição ao servidor.</li>
+                    <li>O Back-End recebe a requisição.</li>
+                    <li>Os dados são validados.</li>
+                    <li>As regras de negócio são verificadas.</li>
+                    <li>O Back-End pode consultar um banco de dados.</li>
+                    <li>O servidor cria uma resposta.</li>
+                    <li>A resposta volta para o Front-End.</li>
+                    <li>O usuário vê o resultado na tela.</li>
+                </ol>
+            </article>
+        </section>
+
+
+        <section id="apis">
+            <h2>3. APIs</h2>
+
+            <article>
+                <h3>O que é uma API?</h3>
+
+                <p>
+                    API significa Application Programming Interface.
+                    Ela permite que diferentes partes de um sistema
+                    possam se comunicar e trocar informações.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Para que serve uma API?</h3>
+
+                <p>
+                    Uma API pode ser utilizada para permitir que o Front-End
+                    solicite informações ao Back-End. Por exemplo, uma
+                    página pode pedir ao servidor a lista de produtos
+                    disponíveis em uma loja.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>O que é API REST?</h3>
+
+                <p>
+                    REST é um estilo de arquitetura utilizado para criar
+                    serviços Web. APIs REST geralmente utilizam métodos HTTP
+                    para realizar operações sobre recursos e frequentemente
+                    utilizam JSON para enviar dados.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>O que são endpoints?</h3>
+
+                <p>
+                    Endpoint é um endereço específico de uma API.
+                    Ele representa um recurso ou uma operação.
+                </p>
+
+                <p>
+                    Exemplo:
+                </p>
+
+                <code>/api/produtos</code>
+            </article>
+
+
+            <article>
+                <h3>Métodos HTTP</h3>
+
+                <table>
+                    <tr>
+                        <th>Método</th>
+                        <th>Função</th>
+                        <th>Exemplo</th>
+                    </tr>
+
+                    <tr>
+                        <td>GET</td>
+                        <td>Consultar dados.</td>
+                        <td>GET /api/produtos</td>
+                    </tr>
+
+                    <tr>
+                        <td>POST</td>
+                        <td>Criar um novo recurso.</td>
+                        <td>POST /api/produtos</td>
+                    </tr>
+
+                    <tr>
+                        <td>PUT</td>
+                        <td>Atualizar ou substituir um recurso.</td>
+                        <td>PUT /api/produtos/10</td>
+                    </tr>
+
+                    <tr>
+                        <td>PATCH</td>
+                        <td>Alterar apenas uma parte do recurso.</td>
+                        <td>PATCH /api/produtos/10</td>
+                    </tr>
+
+                    <tr>
+                        <td>DELETE</td>
+                        <td>Excluir um recurso.</td>
+                        <td>DELETE /api/produtos/10</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Exemplo de código</h3>
+
+                <pre><code>fetch("/api/produtos")
+    .then(resposta =&gt; resposta.json())
+    .then(produtos =&gt; {
+        console.log(produtos);
+    });</code></pre>
+
+                <p>
+                    Nesse exemplo, o Front-End faz uma requisição para
+                    buscar os produtos através da API.
+                </p>
+            </article>
+        </section>
+
+
+        <section id="tecnologias">
+            <h2>4. Tecnologias Back-End</h2>
+
+            <table>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Linguagem</th>
+                    <th>Características</th>
+                    <th>Exemplos de utilização</th>
+                </tr>
+
+                <tr>
+                    <td>Node.js</td>
+                    <td>JavaScript</td>
+                    <td>
+                        Permite executar JavaScript no servidor
+                        e trabalha bem com aplicações de rede.
+                    </td>
+                    <td>
+                        APIs, sites e aplicações em tempo real.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Python</td>
+                    <td>Python</td>
+                    <td>
+                        Linguagem conhecida pela sintaxe simples
+                        e por possuir vários frameworks Web.
+                    </td>
+                    <td>
+                        APIs, sites, automações e sistemas.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PHP</td>
+                    <td>PHP</td>
+                    <td>
+                        Linguagem bastante utilizada para desenvolvimento Web.
+                    </td>
+                    <td>
+                        Sites dinâmicos e sistemas Web.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Java + Spring</td>
+                    <td>Java</td>
+                    <td>
+                        Ecossistema utilizado principalmente em aplicações
+                        maiores e sistemas empresariais.
+                    </td>
+                    <td>
+                        APIs e sistemas empresariais.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>ASP.NET Core</td>
+                    <td>C#</td>
+                    <td>
+                        Framework multiplataforma para criação de aplicações
+                        Web e APIs.
+                    </td>
+                    <td>
+                        Sites, APIs e sistemas empresariais.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section id="aplicacao">
+            <h2>5. Análise de uma aplicação real</h2>
+
+            <article>
+                <h3>Exemplo: loja virtual</h3>
+
+                <p>
+                    Imagine uma loja virtual onde existe um botão
+                    chamado “Comprar”.
+                </p>
+
+                <ol>
+                    <li>
+                        O usuário clica no botão “Comprar”.
+                    </li>
+
+                    <li>
+                        O Front-End envia uma requisição POST para
+                        o endpoint <code>/api/pedidos</code>.
+                    </li>
+
+                    <li>
+                        O Back-End recebe as informações do pedido.
+                    </li>
+
+                    <li>
+                        O servidor verifica se os dados estão corretos.
+                    </li>
+
+                    <li>
+                        O Back-End consulta o banco de dados para
+                        verificar o produto e o estoque.
+                    </li>
+
+                    <li>
+                        Se houver estoque, o sistema registra o pedido.
+                    </li>
+
+                    <li>
+                        O estoque pode ser atualizado no banco de dados.
+                    </li>
+
+                    <li>
+                        O Back-End envia uma resposta para o Front-End.
+                    </li>
+
+                    <li>
+                        O Front-End mostra uma mensagem informando
+                        que o pedido foi criado.
+                    </li>
+                </ol>
+
+                <p>
+                    Portanto, um simples clique pode iniciar várias
+                    operações no Back-End antes que o usuário veja
+                    o resultado na tela.
+                </p>
+            </article>
+
+
+            <article>
+                <h3>Exemplo de resposta da API</h3>
+
+                <pre><code>{
+    "pedido": 125,
+    "status": "criado",
+    "mensagem": "Pedido criado com sucesso"
+}</code></pre>
+            </article>
+        </section>
+
+
+        <section>
+            <h2>Conclusão</h2>
+
+            <p>
+                O Back-End é uma parte fundamental das aplicações Web.
+                Ele é responsável por processar informações, aplicar
+                regras de negócio, validar dados, trabalhar com bancos
+                de dados e responder às solicitações do Front-End.
+            </p>
+
+            <p>
+                Assim, quando um usuário clica em um botão, muitas vezes
+                existe uma sequência de operações acontecendo no servidor
+                antes que o resultado apareça na tela.
+            </p>
+        </section>
+
+
+        <section id="referencias">
+            <h2>Referências utilizadas</h2>
+
+            <ul>
+                <li>
+                    MDN Web Docs — HTTP e desenvolvimento Web.
+                </li>
+
+                <li>
+                    Node.js — documentação oficial.
+                </li>
+
+                <li>
+                    Python — documentação e site oficial.
+                </li>
+
+                <li>
+                    PHP — documentação oficial.
+                </li>
+
+                <li>
+                    Microsoft Learn — documentação do ASP.NET Core.
+                </li>
+            </ul>
+
+            <p>
+                <a href="https://developer.mozilla.org/" target="_blank">
+                    MDN Web Docs
+                </a>
+                <br>
+
+                <a href="https://nodejs.org/" target="_blank">
+                    Node.js
+                </a>
+                <br>
+
+                <a href="https://www.python.org/" target="_blank">
+                    Python
+                </a>
+                <br>
+
+                <a href="https://www.php.net/" target="_blank">
+                    PHP
+                </a>
+                <br>
+
+                <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">
+                    Microsoft Learn — ASP.NET Core
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Projeto de pesquisa — Desenvolvimento Back-End em Aplicações Web
+        </p>
+    </footer>
+
+</body>
+</html>
